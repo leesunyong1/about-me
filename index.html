@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>내 첫 번째 페이지</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-white text-dark">
+    <header class="border-bottom">
+      <nav class="navbar navbar-expand-lg bg-light py-2">
+        <div class="container-fluid">
+          <div
+            class="text-nowrap bg-white border border-secondary-subtle px-2 py-1 rounded shadow-sm"
+          >
+            <span class="fw-bold text-secondary fs-6">welcome back!</span>
+          </div>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav align-items-center">
+              <li class="nav-item">
+                <a class="nav-link fw-bold text-dark" href="#intro">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-secondary"
+                  aria-current="page"
+                  href="#interests"
+                  >관심분야</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-secondary" href="#about">소개</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-secondary" href="#lessons">목표</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-secondary" href="./goal.html"
+                  >연락처</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="intro" class="py-5 bg-white border-bottom">
+        <div class="container">
+          <div class="row align-items-center g-4">
+            <div class="col-12 col-md-6 text-center text-md-start">
+              <span
+                class="badge bg-secondary-subtle text-secondary border border-secondary-subtle px-3 py-2 rounded-pill mb-3"
+              >
+                1인 창업자 6기
+              </span>
+              <h1 class="display-6 fw-bold text-dark mb-3">
+                누구보다 자유롭고<br />
+                누구보다 행복하고싶은
+              </h1>
+              <p class="text-secondary fs-5 mb-4">
+                안녕하세요, 1인 창업을 꿈꾸는<span style="color: black">
+                  <strong>이선용</strong></span
+                >입니다.<br />
+                웹 개발 기초부터 차근차근 다져서<br />
+                실서비스를 만드는 것이 목표입니다.
+              </p>
+              <div
+                class="d-flex gap-2 justify-content-center justify-content-md-start"
+              >
+                <a href="#about" class="btn btn-dark px-4 py-2 fw-bold"
+                  >소개 보기</a
+                >
+                <a
+                  href="https://github.com/leesunyong1/about-me"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-outline-secondary px-4 py-2 fw-bold"
+                  >git hub</a
+                >
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div
+                id="mainCarousel"
+                class="carousel slide shadow rounded overflow-hidden"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#mainCarousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#mainCarousel"
+                    data-bs-slide-to="1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#mainCarousel"
+                    data-bs-slide-to="2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#mainCarousel"
+                    data-bs-slide-to="3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#mainCarousel"
+                    data-bs-slide-to="4"
+                  ></button>
+                </div>
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./images/사진1.jpg"
+                      class="d-block w-100"
+                      alt="사진 1"
+                      style="height: 380px; object-fit: cover"
+                    />
+                  </div>
+
+                  <div class="carousel-item">
+                    <img
+                      src="./images/사진2.jpg"
+                      class="d-block w-100"
+                      alt="사진 2"
+                      style="height: 380px; object-fit: cover"
+                    />
+                  </div>
+
+                  <div class="carousel-item">
+                    <img
+                      src="./images/사진3.jpg"
+                      class="d-block w-100"
+                      alt="사진 3"
+                      style="height: 380px; object-fit: cover"
+                    />
+                  </div>
+
+                  <div class="carousel-item">
+                    <img
+                      src="./images/사진4.jpg"
+                      class="d-block w-100"
+                      alt="사진 4"
+                      style="height: 380px; object-fit: cover"
+                    />
+                  </div>
+
+                  <div class="carousel-item">
+                    <img
+                      src="./images/사진5.jpg"
+                      class="d-block w-100"
+                      alt="사진 5"
+                      style="height: 380px; object-fit: cover"
+                    />
+                  </div>
+                </div>
+
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#mainCarousel"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">이전</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#mainCarousel"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">다음</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <hr class="text-secondary opacity-25" />
+        <article class="my-4">
+          <section id="experience" class="py-5 bg-light border-bottom">
+            <div class="container">
+              <div class="row align-items-center g-4 justify-content-center">
+                <div class="col-12 col-lg-8">
+                  <div class="card border-0 shadow-sm p-4 p-md-5 bg-white">
+                    <span
+                      class="badge bg-secondary-subtle text-secondary border border-secondary-subtle px-3 py-2 rounded-pill mb-3 w-auto align-self-start"
+                    >
+                      BACKGROUND
+                    </span>
+                    <h3 class="fw-bold text-dark mb-3">
+                      영상 제작에서 웹 서비스 개발로
+                    </h3>
+                    <p class="text-secondary fs-6 leading-relaxed mb-4">
+                      영상 제작 및 모션그래픽을 만드는 일을 했습니다.
+                      <br />
+                      이제는 단순히 보는 콘텐츠를 넘어, ai시대에 발 맞춰
+                      사용자가 직접 상호작용하고<br />
+                      문제를 해결할 수 있는 <strong>웹 서비스를</strong>을 직접
+                      만들기 위해 개발에 도전하고 있습니다.
+                    </p>
+                    <div class="row g-3 text-center">
+                      <div class="col-4 border-end">
+                        <div class="fw-bold text-dark fs-5">Production</div>
+                        <small class="text-secondary">영상 기획/제작</small>
+                      </div>
+                      <div class="col-4 border-end">
+                        <div class="fw-bold text-dark fs-5">
+                          Motion & Visual
+                        </div>
+                        <small class="text-secondary">시각적 연출</small>
+                      </div>
+                      <div class="col-4">
+                        <div class="fw-bold text-dark fs-5">Web & AI SaaS</div>
+                        <small class="text-secondary">현재 도전 분야</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="container my-5">
+            <div class="row g-4 justify-content-center">
+              <div class="col-12 col-md-6 col-lg-4">
+                <section id="interests">
+                  <div
+                    class="card h-100 custom-card border border-secondary-subtle"
+                  >
+                    <div class="card-header bg-dark text-white fw-bold">
+                      💻 관심분야
+                    </div>
+                    <ul class="list-group list-group-flush text-start">
+                      <li class="list-group-item">영상제작</li>
+                      <li class="list-group-item">AI SaaS 1인 창업</li>
+                      <li class="list-group-item">웹/앱 프론트/백엔드 공부</li>
+                    </ul>
+                  </div>
+                </section>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4">
+                <section id="about">
+                  <div
+                    class="card h-100 custom-card border border-secondary-subtle"
+                  >
+                    <div class="card-header bg-dark text-white fw-bold">
+                      🏍️ 취미 & 일상
+                    </div>
+                    <ul class="list-group list-group-flush text-start">
+                      <li class="list-group-item">오토바이 모토캠핑</li>
+                      <li class="list-group-item">강아지 고양이 시중들기</li>
+                      <li class="list-group-item">맛있는 음식과 술 한잔</li>
+                    </ul>
+                  </div>
+                </section>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4">
+                <section id="lessons">
+                  <div
+                    class="card h-100 custom-card border border-secondary-subtle"
+                  >
+                    <div class="card-header bg-dark text-white fw-bold">
+                      🔥 이러고 싶어요
+                    </div>
+                    <ul class="list-group list-group-flush text-start">
+                      <li class="list-group-item">오늘 일을 미루지 말자</li>
+                      <li class="list-group-item">후회하지 않기</li>
+                      <li class="list-group-item">긍정적 사고</li>
+                    </ul>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+
+          <hr class="text-secondary opacity-25" />
+
+          <hr class="text-secondary opacity-25" />
+
+          <section id="goals" class="py-5 bg-white border-bottom">
+            <div class="container">
+              <div class="text-center mb-5">
+                <span
+                  class="badge bg-dark text-white px-3 py-2 rounded-pill mb-2"
+                  >ROADMAP</span
+                >
+                <h2 class="fw-bold text-dark">나의 개발 목표</h2>
+              </div>
+
+              <div class="row g-4 justify-content-center">
+                <div class="col-12 col-md-6">
+                  <div
+                    class="card h-100 border border-secondary-subtle p-4 shadow-sm"
+                  >
+                    <h5 class="fw-bold text-dark mb-2">
+                      💡 웹 개발을 배우는 이유
+                    </h5>
+                    <p class="text-secondary mb-0">
+                      상상만 했던걸 실제로 구현해 서비스로 만들 수 있는것과
+                      <br />저만에 개인 능력을 키우고 싶어 시작하게 되었습니다.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <div
+                    class="card h-100 border border-secondary-subtle p-4 shadow-sm"
+                  >
+                    <h5 class="fw-bold text-dark mb-2">
+                      🚀 이번 과정에서 만들고 싶은 것
+                    </h5>
+                    <p class="text-secondary mb-0">
+                      머릿속으로 계획해 둔 실제 서비스 웹사이트를 <br />
+                      직접 완성하여 런칭하는 것입니다.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <div
+                    class="card h-100 border border-secondary-subtle p-4 shadow-sm"
+                  >
+                    <h5 class="fw-bold text-dark mb-2">⚙️ 배우고 싶은 기술</h5>
+                    <p class="text-secondary mb-0">
+                      실전에 바로 쓸 수 있는 프론트/백엔드 웹 개발 기술과<br />
+                      프롬프트 엔지니어링 역량입니다.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <div
+                    class="card h-100 border border-secondary-subtle p-4 shadow-sm"
+                  >
+                    <h5 class="fw-bold text-dark mb-2">🎯 개발자로서의 태도</h5>
+                    <p class="text-secondary mb-0">
+                      끈기 있게, 될 때까지 무조건 파고드는 집요함!<br />처럼
+                      하려고 하고 있습니다 :)
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div
+                    class="card border-0 bg-dark text-white p-4 text-center rounded shadow"
+                  >
+                    <p class="text-secondary-subtle small mb-1">
+                      나에게 남기는 한 마디
+                    </p>
+                    <h3 class="fw-bold mb-0 text-white">
+                      "생각하지 말고 그냥 해 !!!!!!!!!!!!!"
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="container text-center">
+            <div class="shadow-sm p-4 mb-5 bg-light border rounded">
+              <div>마지막으로..</div>
+              <div class="h5 m-0 fw-bold text-dark">
+                재밌게 공부해서 목표한바 다같이 이뤘으면 좋겠습니다. 앞으로 잘
+                부탁드립니다! :)
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-white py-3 text-center mt-5">
+      <div class="container">
+        <small>Production date 2026.08.20 | 이선용</small>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
